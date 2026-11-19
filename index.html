@@ -1,0 +1,1831 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      window.addEventListener(
+        'error',
+        function (event) {
+          if (event && typeof event.filename === 'string' && event.filename.indexOf('chrome-extension://') === 0) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+          }
+        },
+        true
+      );
+    </script>
+    <title>ZEBICOM — Technology • Innovation • Growth</title>
+    <meta
+      name="description"
+      content="ZEBICOM is a Digital Marketing, IT Solutions, and AI Automation company helping businesses innovate, automate, and grow through modern technology and intelligent AI agents."
+    />
+    <meta property="og:title" content="ZEBICOM — Digital Marketing, IT Solutions & AI Automation" />
+    <meta
+      property="og:description"
+      content="Transform your business with technology and intelligence. Digital marketing, custom software, AI agents, and workflow automation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg" />
+    <meta name="theme-color" content="#080808" />
+    <link rel="icon" type="image/jpeg" href="assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg" />
+    <link rel="apple-touch-icon" href="assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Branded ZEBICOM Intro Curtain -->
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <img
+        src="assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg"
+        onerror="this.onerror=null;this.src='public/assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg'"
+        alt="ZEBICOM"
+        class="loader-emblem"
+      />
+      <div class="loader-track">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+
+    <!-- Section 1: Sticky Navigation Bar -->
+    <header id="site-header" class="site-header">
+      <div class="container header-inner">
+        <a
+          href="#home"
+          data-scroll-target="home"
+          class="brand-lockup"
+          aria-label="ZEBICOM Home"
+        >
+          <img
+            src="assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg"
+            onerror="this.onerror=null;this.src='public/assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg'"
+            alt="ZEBICOM Logo"
+            class="brand-logo-img"
+          />
+          <span class="brand-wordmark">Zebi<span class="text-red">com</span></span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary Navigation">
+          <a href="#home" data-scroll-target="home" data-nav-id="home" class="nav-link is-active">Home</a>
+          <a href="#about" data-scroll-target="about" data-nav-id="about" class="nav-link">About Us</a>
+          <a href="#services" data-scroll-target="services" data-nav-id="services" class="nav-link">Services</a>
+          <a href="#ai-solutions" data-scroll-target="ai-solutions" data-nav-id="ai-solutions" class="nav-link">AI Solutions</a>
+          <a href="#our-work" data-scroll-target="our-work" data-nav-id="our-work" class="nav-link">Our Work</a>
+          <a href="#contact" data-scroll-target="contact" data-nav-id="contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#book-call" data-scroll-target="book-call" class="btn btn--primary header-cta">
+            Let&apos;s Talk
+          </a>
+
+          <button
+            id="hamburger-btn"
+            type="button"
+            class="hamburger-btn"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+            aria-label="Open navigation menu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line hamburger-line--red"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-drawer" class="mobile-drawer">
+        <nav class="mobile-drawer-inner" aria-label="Mobile Navigation">
+          <a href="#home" data-scroll-target="home" data-nav-id="home" class="mobile-nav-link is-active">Home</a>
+          <a href="#about" data-scroll-target="about" data-nav-id="about" class="mobile-nav-link">About Us</a>
+          <a href="#services" data-scroll-target="services" data-nav-id="services" class="mobile-nav-link">Services</a>
+          <a href="#ai-solutions" data-scroll-target="ai-solutions" data-nav-id="ai-solutions" class="mobile-nav-link">AI Solutions</a>
+          <a href="#our-work" data-scroll-target="our-work" data-nav-id="our-work" class="mobile-nav-link">Our Work</a>
+          <a href="#contact" data-scroll-target="contact" data-nav-id="contact" class="mobile-nav-link">Contact</a>
+          <a href="#book-call" data-scroll-target="book-call" class="btn btn--primary btn--center" style="margin-top: 8px;">
+            Let&apos;s Talk
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section 2: Hero Section -->
+      <section id="home" class="hero">
+        <div class="arch-grid" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div>
+            <p class="hero-tagline">Technology • Innovation • Growth</p>
+            <h1 class="hero-title">
+              Transform Your Business With
+              <span class="text-red">Technology &amp; Intelligence.</span>
+            </h1>
+            <p class="hero-description">
+              From powerful digital marketing strategies to intelligent AI agents and custom
+              IT solutions, we help businesses innovate, automate, and grow.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#services" data-scroll-target="services" class="btn btn--primary">
+                <span>Explore Our Solutions</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="#book-call" data-scroll-target="book-call" class="btn btn--secondary">
+                Talk To Our Experts
+              </a>
+            </div>
+
+            <div class="hero-disciplines">
+              <span>Digital Marketing</span>
+              <span class="text-red" aria-hidden="true">/</span>
+              <span>IT &amp; Software</span>
+              <span class="text-red" aria-hidden="true">/</span>
+              <span>AI Agents</span>
+              <span class="text-red" aria-hidden="true">/</span>
+              <span>Business Automation</span>
+            </div>
+          </div>
+
+          <div class="hero-visual-frame">
+            <div class="arch-grid arch-grid--dense" aria-hidden="true"></div>
+            <img
+              src="src/assets/images/zebicom_hero_core_1794899319426.jpg"
+              alt="ZEBICOM futuristic architectural technology core with crimson optical geometry"
+              class="hero-core-img"
+            />
+            <div class="hero-vignette" aria-hidden="true"></div>
+
+            <svg viewBox="0 0 500 500" class="hero-network-svg" aria-hidden="true">
+              <g class="orbit-slow">
+                <circle cx="250" cy="250" r="212" fill="none" stroke="rgba(255,255,255,0.13)" stroke-width="1" stroke-dasharray="6 10" />
+                <circle cx="250" cy="38" r="3.5" fill="#F00018" />
+                <circle cx="462" cy="250" r="2.5" fill="#FFFFFF" />
+              </g>
+              <g class="orbit-reverse">
+                <circle cx="250" cy="250" r="164" fill="none" stroke="rgba(240,0,24,0.4)" stroke-width="1" stroke-dasharray="24 14 4 14" />
+                <circle cx="86" cy="250" r="3" fill="#F00018" />
+              </g>
+              <line x1="64" y1="108" x2="164" y2="164" stroke="rgba(255,255,255,0.22)" stroke-width="1" />
+              <line x1="436" y1="112" x2="338" y2="168" stroke="rgba(240,0,24,0.45)" stroke-width="1" />
+              <line x1="78" y1="388" x2="166" y2="336" stroke="rgba(240,0,24,0.45)" stroke-width="1" />
+              <line x1="422" y1="392" x2="336" y2="338" stroke="rgba(255,255,255,0.22)" stroke-width="1" />
+              <circle cx="64" cy="108" r="3.5" fill="#FFFFFF" />
+              <circle cx="436" cy="112" r="3.5" fill="#F00018" />
+              <circle cx="78" cy="388" r="3.5" fill="#F00018" />
+              <circle cx="422" cy="392" r="3.5" fill="#FFFFFF" />
+            </svg>
+
+            <div class="hero-float-node hero-float-node--top" aria-hidden="true">
+              <p class="hero-float-label">AI Agents</p>
+              <p class="hero-float-title">Voice &amp; Chat Automation</p>
+            </div>
+
+            <div class="hero-float-node hero-float-node--bottom" aria-hidden="true">
+              <p class="hero-float-label hero-float-label--red">Connected Stack</p>
+              <p class="hero-float-title">Marketing · IT · Workflows</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: About ZEBICOM -->
+      <section id="about" class="section section--bg-black">
+        <div class="container about-grid">
+          <div class="about-narrative reveal">
+            <div>
+              <p class="section-kicker">About ZEBICOM</p>
+              <h2 class="section-title">Technology That Moves Businesses Forward.</h2>
+              <div class="about-copy">
+                <p>
+                  ZEBICOM is a technology and digital growth company focused on helping
+                  businesses build a stronger digital presence, improve operational
+                  efficiency, and unlock new growth opportunities.
+                </p>
+                <p>
+                  We combine digital marketing expertise, IT development, AI-powered
+                  solutions, and intelligent automation to solve real business challenges.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-meta-bar">
+              <span class="about-meta-tagline">Technology • Innovation • Growth</span>
+              <span class="about-meta-loc">Gwalior, India · Serving Global Clients</span>
+            </div>
+          </div>
+
+          <div class="values-stack reveal">
+            <article class="value-card">
+              <span class="value-number">01</span>
+              <div>
+                <h3 class="value-title">Technology First</h3>
+                <p class="value-desc">
+                  Every solution starts with resilient architecture, modern software
+                  standards, and scalable technical foundations.
+                </p>
+              </div>
+            </article>
+
+            <article class="value-card">
+              <span class="value-number">02</span>
+              <div>
+                <h3 class="value-title">Innovation Driven</h3>
+                <p class="value-desc">
+                  We apply intelligent AI agents and automated workflows to eliminate
+                  manual bottlenecks across daily operations.
+                </p>
+              </div>
+            </article>
+
+            <article class="value-card">
+              <span class="value-number">03</span>
+              <div>
+                <h3 class="value-title">Growth Focused</h3>
+                <p class="value-desc">
+                  Digital campaigns, web platforms, and engineering systems are aligned
+                  around measurable business momentum.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Our Services -->
+      <section id="services" class="section section--bg-dark">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">Our Services</p>
+            <h2 class="section-title">Integrated Digital, Software &amp; AI Capabilities.</h2>
+            <p class="section-lead" style="margin-top: 14px;">
+              Six core disciplines engineered to connect brand acquisition, custom software
+              infrastructure, and intelligent automation.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service 01 -->
+            <article class="service-card reveal">
+              <div>
+                <div class="service-card-top">
+                  <span class="service-index">Service 01</span>
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                      <polyline points="16 7 22 7 22 13"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="service-title">Digital Marketing</h3>
+                <p class="service-desc">
+                  Build your brand, reach the right audience, and generate quality business opportunities.
+                </p>
+                <ul class="service-list">
+                  <li>Social Media Marketing</li>
+                  <li>Meta Ads Management</li>
+                  <li>Google Ads Management</li>
+                  <li>Lead Generation</li>
+                  <li>SEO Optimization</li>
+                  <li>Content Strategy</li>
+                  <li>Social Media Management</li>
+                </ul>
+              </div>
+              <button type="button" data-open-service="digital-marketing" class="btn btn--ghost btn--full">
+                <span>Explore Service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </button>
+            </article>
+
+            <!-- Service 02 -->
+            <article class="service-card reveal">
+              <div>
+                <div class="service-card-top">
+                  <span class="service-index">Service 02</span>
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M2 12h20"></path>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-desc">
+                  Create powerful digital experiences with modern, responsive, and conversion-focused websites.
+                </p>
+                <ul class="service-list">
+                  <li>Business Websites</li>
+                  <li>E-commerce Websites</li>
+                  <li>Landing Pages</li>
+                  <li>WordPress Development</li>
+                  <li>Custom Website Development</li>
+                </ul>
+              </div>
+              <button type="button" data-open-service="web-development" class="btn btn--ghost btn--full">
+                <span>Explore Service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </button>
+            </article>
+
+            <!-- Service 03 -->
+            <article class="service-card reveal">
+              <div>
+                <div class="service-card-top">
+                  <span class="service-index">Service 03</span>
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+                      <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                      <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                      <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="service-title">IT &amp; Software Solutions</h3>
+                <p class="service-desc">
+                  Technology solutions designed to simplify business operations and improve productivity.
+                </p>
+                <ul class="service-list">
+                  <li>Custom Software Development</li>
+                  <li>Web Applications</li>
+                  <li>Mobile Applications</li>
+                  <li>SaaS Development</li>
+                  <li>Business Management Systems</li>
+                  <li>API Integrations</li>
+                </ul>
+              </div>
+              <button type="button" data-open-service="it-solutions" class="btn btn--ghost btn--full">
+                <span>Explore Service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </button>
+            </article>
+
+            <!-- Service 04 -->
+            <article class="service-card reveal">
+              <div>
+                <div class="service-card-top">
+                  <span class="service-index">Service 04</span>
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                      <circle cx="12" cy="5" r="2"></circle>
+                      <path d="M12 7v4"></path>
+                      <line x1="8" y1="16" x2="8" y2="16"></line>
+                      <line x1="16" y1="16" x2="16" y2="16"></line>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="service-title">AI Agents</h3>
+                <p class="service-desc">
+                  Deploy intelligent AI employees that communicate with customers and support your business operations 24/7.
+                </p>
+                <ul class="service-list">
+                  <li>AI Voice Agents</li>
+                  <li>AI Calling Agents</li>
+                  <li>AI Receptionists</li>
+                  <li>AI Customer Support Agents</li>
+                  <li>AI Chatbots</li>
+                  <li>Appointment Booking Agents</li>
+                </ul>
+              </div>
+              <button type="button" data-open-service="ai-agents" class="btn btn--ghost btn--full">
+                <span>Explore Service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </button>
+            </article>
+
+            <!-- Service 05 -->
+            <article class="service-card reveal">
+              <div>
+                <div class="service-card-top">
+                  <span class="service-index">Service 05</span>
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="6" height="6" rx="1"></rect>
+                      <rect x="15" y="15" width="6" height="6" rx="1"></rect>
+                      <path d="M9 6h6a2 2 0 0 1 2 2v7"></path>
+                      <path d="M15 18H9a2 2 0 0 1-2-2V9"></path>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="service-title">AI Automation</h3>
+                <p class="service-desc">
+                  Automate repetitive business tasks and connect your business systems with intelligent workflows.
+                </p>
+                <ul class="service-list">
+                  <li>Business Workflow Automation</li>
+                  <li>n8n Automation</li>
+                  <li>CRM Automation</li>
+                  <li>WhatsApp Automation</li>
+                  <li>Email Automation</li>
+                  <li>Lead Follow-up Automation</li>
+                  <li>AI-Powered Business Workflows</li>
+                </ul>
+              </div>
+              <button type="button" data-open-service="ai-automation" class="btn btn--ghost btn--full">
+                <span>Explore Service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </button>
+            </article>
+
+            <!-- Service 06 -->
+            <article class="service-card reveal">
+              <div>
+                <div class="service-card-top">
+                  <span class="service-index">Service 06</span>
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                      <rect x="9" y="9" width="6" height="6"></rect>
+                      <path d="M15 2v2"></path>
+                      <path d="M15 20v2"></path>
+                      <path d="M2 15h2"></path>
+                      <path d="M2 9h2"></path>
+                      <path d="M20 15h2"></path>
+                      <path d="M20 9h2"></path>
+                      <path d="M9 2v2"></path>
+                      <path d="M9 20v2"></path>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="service-title">Custom AI Solutions</h3>
+                <p class="service-desc">
+                  Build intelligent solutions tailored to your business requirements.
+                </p>
+                <ul class="service-list">
+                  <li>Custom AI Integrations</li>
+                  <li>AI-Powered Applications</li>
+                  <li>Intelligent Business Assistants</li>
+                  <li>AI Data Processing</li>
+                  <li>Custom Automation Systems</li>
+                </ul>
+              </div>
+              <button type="button" data-open-service="custom-ai-solutions" class="btn btn--ghost btn--full">
+                <span>Explore Service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: AI Solutions - Featured Section -->
+      <section id="ai-solutions" class="section section--bg-black" style="overflow: hidden;">
+        <div class="ai-ambient-glow" aria-hidden="true"></div>
+        <div class="container" style="position: relative;">
+          <div class="section-header--split reveal">
+            <div>
+              <p class="section-kicker">AI Solutions</p>
+              <h2 class="section-title">
+                Meet Your New <span class="text-red">AI Employees.</span>
+              </h2>
+              <p class="section-lead" style="margin-top: 14px;">
+                Intelligent AI agents that work around the clock, communicate with
+                customers, manage repetitive tasks, and help businesses operate more
+                efficiently.
+              </p>
+            </div>
+            <button type="button" data-book-service="AI Agents" class="btn btn--primary">
+              <span>Discover AI Solutions</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="ai-layout">
+            <!-- 4 Interactive AI Feature Cards -->
+            <div class="ai-cards-grid">
+              <button type="button" data-ai-card="ai-receptionist" aria-pressed="true" class="ai-card is-selected">
+                <div>
+                  <div class="ai-card-head">
+                    <div class="ai-icon-box" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                      </svg>
+                    </div>
+                    <span class="font-mono-num text-xs" style="color: var(--grey);">01</span>
+                  </div>
+                  <h3 class="ai-card-title">AI Receptionist</h3>
+                  <p class="ai-card-desc">
+                    Answers customer calls, handles inquiries, and helps schedule appointments.
+                  </p>
+                </div>
+                <div class="ai-card-footer">
+                  <span class="ai-card-channel">Inbound Voice &amp; Scheduling</span>
+                  <span data-ai-status>Selected</span>
+                </div>
+              </button>
+
+              <button type="button" data-ai-card="ai-calling-agent" aria-pressed="false" class="ai-card">
+                <div>
+                  <div class="ai-card-head">
+                    <div class="ai-icon-box" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 7 23 1 17 1"></polyline>
+                        <line x1="16" y1="8" x2="23" y2="1"></line>
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                      </svg>
+                    </div>
+                    <span class="font-mono-num text-xs" style="color: var(--grey);">02</span>
+                  </div>
+                  <h3 class="ai-card-title">AI Calling Agent</h3>
+                  <p class="ai-card-desc">
+                    Automates outbound calls, lead qualification, and customer follow-ups.
+                  </p>
+                </div>
+                <div class="ai-card-footer">
+                  <span class="ai-card-channel">Outbound Voice Qualification</span>
+                  <span data-ai-status>Inspect</span>
+                </div>
+              </button>
+
+              <button type="button" data-ai-card="ai-customer-support" aria-pressed="false" class="ai-card">
+                <div>
+                  <div class="ai-card-head">
+                    <div class="ai-icon-box" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                      </svg>
+                    </div>
+                    <span class="font-mono-num text-xs" style="color: var(--grey);">03</span>
+                  </div>
+                  <h3 class="ai-card-title">AI Customer Support</h3>
+                  <p class="ai-card-desc">
+                    Provides automated customer assistance and answers frequently asked questions.
+                  </p>
+                </div>
+                <div class="ai-card-footer">
+                  <span class="ai-card-channel">Omnichannel Support Desk</span>
+                  <span data-ai-status>Inspect</span>
+                </div>
+              </button>
+
+              <button type="button" data-ai-card="ai-business-automation" aria-pressed="false" class="ai-card">
+                <div>
+                  <div class="ai-card-head">
+                    <div class="ai-icon-box" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="6" height="6" rx="1"></rect>
+                        <rect x="15" y="15" width="6" height="6" rx="1"></rect>
+                        <path d="M9 6h6a2 2 0 0 1 2 2v7"></path>
+                        <path d="M15 18H9a2 2 0 0 1-2-2V9"></path>
+                      </svg>
+                    </div>
+                    <span class="font-mono-num text-xs" style="color: var(--grey);">04</span>
+                  </div>
+                  <h3 class="ai-card-title">AI Business Automation</h3>
+                  <p class="ai-card-desc">
+                    Connects business applications and automates repetitive workflows.
+                  </p>
+                </div>
+                <div class="ai-card-footer">
+                  <span class="ai-card-channel">Cross-System Orchestration</span>
+                  <span data-ai-status>Inspect</span>
+                </div>
+              </button>
+            </div>
+
+            <!-- Interactive AI Acoustic & Workflow Visualizer Stage -->
+            <div class="ai-stage">
+              <div class="arch-grid arch-grid--dense" style="opacity: 0.4;" aria-hidden="true"></div>
+
+              <div class="ai-stage-core">
+                <div class="ai-rings" aria-hidden="true">
+                  <span class="ai-ring ai-ring--outer"></span>
+                  <span class="ai-ring ai-ring--mid"></span>
+                  <span class="ai-ring ai-ring--inner"></span>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position: relative;">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" y1="19" x2="12" y2="22"></line>
+                  </svg>
+                </div>
+
+                <div class="sound-waves" aria-hidden="true">
+                  <span class="wave-bar" style="animation-delay: 0ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 120ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 240ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 80ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 320ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 160ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 40ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 280ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 190ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 90ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 340ms;"></span>
+                  <span class="wave-bar" style="animation-delay: 140ms;"></span>
+                </div>
+
+                <p id="ai-stage-channel" class="ai-stage-channel">Inbound Voice &amp; Scheduling</p>
+                <h3 id="ai-stage-title" class="ai-stage-title">AI Receptionist</h3>
+              </div>
+
+              <div class="ai-stage-flow">
+                <p class="ai-stage-label">Operational Flow</p>
+                <ul id="ai-flow-list" class="ai-flow-list">
+                  <li>Answers every incoming business call immediately without hold queues</li>
+                  <li>Provides accurate service, location, and operating information</li>
+                  <li>Books, confirms, and reschedules calendar appointments automatically</li>
+                </ul>
+              </div>
+
+              <div class="ai-dialogue-wrap">
+                <p class="ai-stage-label ai-stage-label--grey">Interaction Sequence Preview</p>
+                <div id="ai-dialogue-list" class="ai-dialogue-list">
+                  <div class="ai-dialogue-item">
+                    <span class="ai-dialogue-speaker">Caller:</span>
+                    <span>Hello, I would like to schedule a consultation for our company website and automation setup.</span>
+                  </div>
+                  <div class="ai-dialogue-item ai-dialogue-item--agent">
+                    <span class="ai-dialogue-speaker">AI Agent:</span>
+                    <span>Good day. I can arrange that for you right away. Would you prefer a slot tomorrow morning or afternoon?</span>
+                  </div>
+                  <div class="ai-dialogue-item ai-dialogue-item--system">
+                    <span class="ai-dialogue-speaker">System:</span>
+                    <span>Calendar slot verified · Confirmation dispatched via WhatsApp &amp; Email.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Why Choose ZEBICOM? -->
+      <section id="why-zebicom" class="section section--bg-dark">
+        <div class="container why-layout">
+          <div class="why-sticky reveal">
+            <p class="section-kicker" style="margin-bottom: 0;">Why Choose ZEBICOM</p>
+            <h2 class="section-title">Your Technology &amp; Growth Partner.</h2>
+            <p class="section-lead">
+              We unite brand visibility, custom software engineering, and autonomous AI
+              execution under one disciplined team built for long-term reliability.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <article class="why-card reveal">
+              <div class="why-card-top">
+                <span class="why-number">01</span>
+                <span class="why-bar" aria-hidden="true"></span>
+              </div>
+              <h3 class="why-title">Integrated Digital &amp; IT Expertise</h3>
+              <p class="why-desc">
+                Marketing, web engineering, software development, and AI automation delivered
+                under one unified technical partner.
+              </p>
+            </article>
+
+            <article class="why-card reveal">
+              <div class="why-card-top">
+                <span class="why-number">02</span>
+                <span class="why-bar" aria-hidden="true"></span>
+              </div>
+              <h3 class="why-title">AI-First Business Solutions</h3>
+              <p class="why-desc">
+                Practical AI voice agents, chatbots, and automated workflows built for
+                continuous 24/7 operational reliability.
+              </p>
+            </article>
+
+            <article class="why-card reveal">
+              <div class="why-card-top">
+                <span class="why-number">03</span>
+                <span class="why-bar" aria-hidden="true"></span>
+              </div>
+              <h3 class="why-title">Custom-Built Strategies</h3>
+              <p class="why-desc">
+                Every campaign, platform, and automation pipeline is engineered around your
+                specific business model and market.
+              </p>
+            </article>
+
+            <article class="why-card reveal">
+              <div class="why-card-top">
+                <span class="why-number">04</span>
+                <span class="why-bar" aria-hidden="true"></span>
+              </div>
+              <h3 class="why-title">Modern Technology Stack</h3>
+              <p class="why-desc">
+                Clean, fast, and maintainable frameworks paired with API-driven integrations
+                and reliable workflow engines like n8n.
+              </p>
+            </article>
+
+            <article class="why-card reveal">
+              <div class="why-card-top">
+                <span class="why-number">05</span>
+                <span class="why-bar" aria-hidden="true"></span>
+              </div>
+              <h3 class="why-title">Business-Focused Approach</h3>
+              <p class="why-desc">
+                Technology choices are guided by clarity, efficiency, and real operational
+                impact rather than unnecessary complexity.
+              </p>
+            </article>
+
+            <article class="why-card reveal">
+              <div class="why-card-top">
+                <span class="why-number">06</span>
+                <span class="why-bar" aria-hidden="true"></span>
+              </div>
+              <h3 class="why-title">Scalable Solutions</h3>
+              <p class="why-desc">
+                Systems architected to grow seamlessly as your audience, lead volume, and
+                internal operations expand.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Google Business Profile & Live Reviews -->
+      <section id="reviews" class="section section--bg-dark">
+        <div class="container">
+          <div class="reviews-shell reveal">
+            <div class="reviews-grid">
+              <div>
+                <div class="reviews-brand-row">
+                  <img
+                    src="assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg"
+                    onerror="this.onerror=null;this.src='public/assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg'"
+                    alt="ZEBICOM Official Emblem"
+                    class="reviews-emblem"
+                  />
+                  <div>
+                    <p class="section-kicker" style="margin-bottom: 4px;">Google Business Profile</p>
+                    <h2 class="reviews-heading">Verified Live Google Reviews</h2>
+                  </div>
+                </div>
+
+                <p class="section-lead" style="font-size: 1rem;">
+                  Explore authentic, real-time feedback and ratings posted directly by
+                  businesses working with ZEBICOM on our official Google Business listing.
+                </p>
+
+                <div class="reviews-star-bar">
+                  <div class="stars-row" aria-label="Google Business Profile Stars">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F00018" stroke="#F00018" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F00018" stroke="#F00018" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F00018" stroke="#F00018" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F00018" stroke="#F00018" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F00018" stroke="#F00018" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  </div>
+                  <span style="font-size: 0.875rem; color: var(--grey-light);">
+                    Official Google Listing · Gwalior, India
+                  </span>
+                </div>
+
+                <div class="reviews-address">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>
+                    College of Agriculture, Racecourse Rd, RVS Agriculture University Campus,
+                    Thatipur, Gwalior, Madhya Pradesh 474002, India.
+                  </span>
+                </div>
+
+                <div class="reviews-actions">
+                  <a
+                    href="https://share.google/QGEsDHMP4xMEwchBr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn--primary"
+                  >
+                    <span>View Live Google Reviews</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://share.google/QGEsDHMP4xMEwchBr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn--ghost"
+                  >
+                    <span>Write a Review on Google</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="standards-stack">
+                <div class="standard-card">
+                  <div class="standard-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="standard-title">Direct Google Verification</h3>
+                    <p class="standard-desc">
+                      Every review on our Google Business Profile is posted directly by
+                      clients on Google Search and Google Maps—unfiltered and unedited.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="standard-card">
+                  <div class="standard-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="standard-title">Transparent Project Scoping</h3>
+                    <p class="standard-desc">
+                      Clear technical roadmaps, honest delivery timelines, and direct
+                      collaboration with the engineering and marketing team.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="standard-card">
+                  <div class="standard-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="standard-title">Continuous Support &amp; Accountability</h3>
+                    <p class="standard-desc">
+                      From digital marketing to AI agents and custom software, our team stays
+                      accessible via direct phone and WhatsApp.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Our Work / Project Showcase -->
+      <section id="our-work" class="section section--bg-black">
+        <div class="container">
+          <div class="section-header--split reveal">
+            <div>
+              <p class="section-kicker">Our Work</p>
+              <h2 class="section-title">Solution Architectures &amp; Capability Showcase.</h2>
+              <p class="section-lead" style="margin-top: 14px;">
+                Explore our core digital, engineering, and AI automation blueprints designed
+                for modern business environments.
+              </p>
+            </div>
+
+            <div class="filter-tabs" role="tablist" aria-label="Filter showcase by discipline">
+              <button type="button" role="tab" aria-selected="true" data-work-filter="All" class="filter-tab is-active">All</button>
+              <button type="button" role="tab" aria-selected="false" data-work-filter="Digital Marketing" class="filter-tab">Digital Marketing</button>
+              <button type="button" role="tab" aria-selected="false" data-work-filter="Web Development" class="filter-tab">Web Development</button>
+              <button type="button" role="tab" aria-selected="false" data-work-filter="IT Solutions" class="filter-tab">IT Solutions</button>
+              <button type="button" role="tab" aria-selected="false" data-work-filter="AI Automation" class="filter-tab">AI Automation</button>
+            </div>
+          </div>
+
+          <div class="work-grid">
+            <article class="work-card reveal" data-work-category="Digital Marketing">
+              <div>
+                <div class="work-media">
+                  <img
+                    src="src/assets/images/work_digital_marketing_1794899320562.jpg"
+                    alt="Digital Marketing — Omnichannel Growth & Lead Acquisition Architecture"
+                    class="work-img"
+                  />
+                  <div class="work-scrim" aria-hidden="true"></div>
+                  <span class="work-cat-label">Digital Marketing</span>
+                </div>
+                <div class="work-body">
+                  <p class="work-note">Concept Showcase · Acquisition &amp; Conversion System</p>
+                  <h3 class="work-title">Omnichannel Growth &amp; Lead Acquisition Architecture</h3>
+                  <p class="work-summary">
+                    Unified performance marketing framework combining Meta Ads, Google Search
+                    campaigns, SEO architecture, and automated lead capture.
+                  </p>
+                  <div class="work-deliverables">
+                    <span>Meta &amp; Google Ads</span>
+                    <span class="text-red" aria-hidden="true">·</span>
+                    <span>Search SEO</span>
+                    <span class="text-red" aria-hidden="true">·</span>
+                    <span>Lead Funnel Analytics</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-footer">
+                <button type="button" data-book-service="Digital Marketing" class="btn btn--ghost btn--full">
+                  <span>Request Similar Architecture</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7"></path>
+                    <path d="M7 7h10v10"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="work-card reveal" data-work-category="Web Development">
+              <div>
+                <div class="work-media">
+                  <img
+                    src="src/assets/images/work_web_development_1794899321285.jpg"
+                    alt="Web Development — High-Contrast Corporate & Conversion Web Platform"
+                    class="work-img"
+                  />
+                  <div class="work-scrim" aria-hidden="true"></div>
+                  <span class="work-cat-label">Web Development</span>
+                </div>
+                <div class="work-body">
+                  <p class="work-note">Concept Showcase · Web Engineering Blueprint</p>
+                  <h3 class="work-title">High-Contrast Corporate &amp; Conversion Web Platform</h3>
+                  <p class="work-summary">
+                    Responsive, fast-loading custom web architecture engineered for brand
+                    authority, structured service discovery, and direct lead conversion.
+                  </p>
+                  <div class="work-deliverables">
+                    <span>Custom UI Architecture</span>
+                    <span class="text-red" aria-hidden="true">·</span>
+                    <span>Responsive Engineering</span>
+                    <span class="text-red" aria-hidden="true">·</span>
+                    <span>Conversion Flows</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-footer">
+                <button type="button" data-book-service="Web Development" class="btn btn--ghost btn--full">
+                  <span>Request Similar Architecture</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7"></path>
+                    <path d="M7 7h10v10"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="work-card reveal" data-work-category="IT Solutions">
+              <div>
+                <div class="work-media">
+                  <img
+                    src="src/assets/images/work_it_solutions_1794899321551.jpg"
+                    alt="IT Solutions — Modular Business Management & API Integration Core"
+                    class="work-img"
+                  />
+                  <div class="work-scrim" aria-hidden="true"></div>
+                  <span class="work-cat-label">IT Solutions</span>
+                </div>
+                <div class="work-body">
+                  <p class="work-note">Concept Showcase · Enterprise Software Architecture</p>
+                  <h3 class="work-title">Modular Business Management &amp; API Integration Core</h3>
+                  <p class="work-summary">
+                    Scalable custom software ecosystem linking internal operations, client
+                    portals, and external SaaS services via clean API pipelines.
+                  </p>
+                  <div class="work-deliverables">
+                    <span>Custom Web Apps</span>
+                    <span class="text-red" aria-hidden="true">·</span>
+                    <span>API Orchestration</span>
+                    <span class="text-red" aria-hidden="true">·</span>
+                    <span>Management Systems</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-footer">
+                <button type="button" data-book-service="IT Solutions" class="btn btn--ghost btn--full">
+                  <span>Request Similar Architecture</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7"></path>
+                    <path d="M7 7h10v10"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="work-card reveal" data-work-category="AI Automation">
+              <div>
+                <div class="work-media">
+                  <img
+                    src="src/assets/images/work_ai_automation_1794899321191.jpg"
+                    alt="AI Automation — 24/7 AI Agent & n8n Multi-System Workflow Engine"
+                    class="work-img"
+                  />
+                  <div class="work-scrim" aria-hidden="true"></div>
+                  <span class="work-cat-label">AI Automation</span>
+                </div>
+                <div class="work-body">
+                  <p class="work-note">Concept Showcase · Intelligent Automation Matrix</p>
+                  <h3 class="work-title">24/7 AI Agent &amp; n8n Multi-System Workflow Engine</h3>
+                  <p class="work-summary">
+                    Autonomous voice and WhatsApp agent architecture connected to CRM
+                    pipelines for instant inquiry qualification and follow-up.
+                  </p>
+                  <div class="work-deliverables">
+                    <span>AI Voice &amp; Chat Agents</span>
+                    <span class="text-red" aria-hidden="true">·</span>
+                    <span>n8n Workflows</span>
+                    <span class="text-red" aria-hidden="true">·</span>
+                    <span>WhatsApp &amp; CRM Sync</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-footer">
+                <button type="button" data-book-service="AI Automation" class="btn btn--ghost btn--full">
+                  <span>Request Similar Architecture</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F00018" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7"></path>
+                    <path d="M7 7h10v10"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Our Process -->
+      <section id="process" class="section section--bg-dark">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">Our Process</p>
+            <h2 class="section-title">From Idea To Intelligent Execution.</h2>
+            <p class="section-lead" style="margin-top: 14px;">
+              A clear five-stage engineering and growth methodology engineered for rapid
+              deployment and continuous improvement.
+            </p>
+          </div>
+
+          <div class="process-wrapper">
+            <div class="process-connector" aria-hidden="true"></div>
+            <div class="process-grid">
+              <button type="button" data-process-step class="process-step is-active reveal">
+                <span class="process-badge">01</span>
+                <h3 class="process-title">Understand</h3>
+                <p class="process-desc">Understand the business and its requirements.</p>
+              </button>
+
+              <button type="button" data-process-step class="process-step reveal">
+                <span class="process-badge">02</span>
+                <h3 class="process-title">Strategize</h3>
+                <p class="process-desc">Create the right digital or technology strategy.</p>
+              </button>
+
+              <button type="button" data-process-step class="process-step reveal">
+                <span class="process-badge">03</span>
+                <h3 class="process-title">Develop</h3>
+                <p class="process-desc">Design, build, and implement the solution.</p>
+              </button>
+
+              <button type="button" data-process-step class="process-step reveal">
+                <span class="process-badge">04</span>
+                <h3 class="process-title">Launch</h3>
+                <p class="process-desc">Deploy and integrate the solution.</p>
+              </button>
+
+              <button type="button" data-process-step class="process-step reveal">
+                <span class="process-badge">05</span>
+                <h3 class="process-title">Grow</h3>
+                <p class="process-desc">Optimize and improve continuously.</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9: Call To Action -->
+      <section class="cta-banner">
+        <div class="arch-grid arch-grid--dense" style="opacity: 0.45;" aria-hidden="true"></div>
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="container cta-inner reveal">
+          <p class="section-kicker" style="margin-bottom: 0;">Technology • Innovation • Growth</p>
+          <h2 class="section-title">Ready To Transform Your Business?</h2>
+          <p class="section-lead" style="text-align: center;">
+            Let&apos;s build smarter digital experiences, powerful technology, and intelligent
+            AI solutions together.
+          </p>
+          <div class="cta-buttons">
+            <button type="button" data-scroll-target="book-call" class="btn btn--primary">
+              <span>Start Your Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+            <a
+              href="https://wa.me/918519002579"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--secondary"
+            >
+              Contact Our Team
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- High-Conversion WhatsApp Booking System -->
+      <section id="book-call" class="section section--bg-black" style="overflow: hidden;">
+        <div class="arch-grid" style="opacity: 0.45;" aria-hidden="true"></div>
+        <div class="container" style="position: relative;">
+          <div class="section-header--split reveal">
+            <div>
+              <p class="section-kicker">WhatsApp Booking System</p>
+              <h2 class="section-title">
+                Book Your Strategy Session <span class="text-red">In 30 Seconds.</span>
+              </h2>
+              <p class="section-lead" style="margin-top: 14px;">
+                Pick your service, choose a convenient date and time slot, and confirm
+                instantly with our technical and growth specialists on WhatsApp.
+              </p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px 14px; font-size: 0.875rem; color: var(--grey-light);">
+              <span>Direct Specialist Call</span>
+              <span class="text-red" aria-hidden="true">·</span>
+              <span>Zero Obligation</span>
+              <span class="text-red" aria-hidden="true">·</span>
+              <span>Instant WhatsApp Confirmation</span>
+            </div>
+          </div>
+
+          <div class="booking-grid">
+            <!-- Left: 4-Step Slot Configurator -->
+            <div class="booking-configurator">
+              <div class="booking-step-block">
+                <p class="booking-step-label">
+                  <span class="font-mono-num text-red">01</span>
+                  <span>Select Service Focus</span>
+                </p>
+                <div class="booking-service-options">
+                  <button type="button" data-booking-service="Digital Marketing" aria-pressed="true" class="slot-btn is-active">Digital Marketing</button>
+                  <button type="button" data-booking-service="Web Development" aria-pressed="false" class="slot-btn">Web Development</button>
+                  <button type="button" data-booking-service="IT Solutions" aria-pressed="false" class="slot-btn">IT &amp; Software Solutions</button>
+                  <button type="button" data-booking-service="AI Agents" aria-pressed="false" class="slot-btn">AI Agents</button>
+                  <button type="button" data-booking-service="AI Automation" aria-pressed="false" class="slot-btn">AI Automation</button>
+                  <button type="button" data-booking-service="Custom AI Solutions" aria-pressed="false" class="slot-btn">Custom AI Solutions</button>
+                </div>
+              </div>
+
+              <div class="booking-step-block">
+                <p class="booking-step-label">
+                  <span class="font-mono-num text-red">02</span>
+                  <span>Choose Preferred Date</span>
+                </p>
+                <div id="booking-dates-container" class="booking-date-options"></div>
+              </div>
+
+              <div class="booking-step-block">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;">
+                  <p class="booking-step-label" style="margin-bottom: 0;">
+                    <span class="font-mono-num text-red">03</span>
+                    <span>Select Time Slot (IST)</span>
+                  </p>
+                  <span style="font-size: 0.75rem; color: var(--grey);">30-Min Consultation</span>
+                </div>
+                <div class="booking-time-options">
+                  <button type="button" data-booking-time="10:00 AM" aria-pressed="false" class="slot-btn slot-btn--time">10:00 AM</button>
+                  <button type="button" data-booking-time="11:30 AM" aria-pressed="true" class="slot-btn slot-btn--time is-active">11:30 AM</button>
+                  <button type="button" data-booking-time="01:30 PM" aria-pressed="false" class="slot-btn slot-btn--time">01:30 PM</button>
+                  <button type="button" data-booking-time="03:30 PM" aria-pressed="false" class="slot-btn slot-btn--time">03:30 PM</button>
+                  <button type="button" data-booking-time="05:30 PM" aria-pressed="false" class="slot-btn slot-btn--time">05:30 PM</button>
+                  <button type="button" data-booking-time="07:30 PM" aria-pressed="false" class="slot-btn slot-btn--time">07:30 PM</button>
+                </div>
+              </div>
+
+              <div class="booking-step-block">
+                <p class="booking-step-label">
+                  <span class="font-mono-num text-red">04</span>
+                  <span>Preferred Meeting Format</span>
+                </p>
+                <div class="booking-format-options">
+                  <button type="button" data-booking-format="WhatsApp Video / Voice Call" data-booking-format-short="WhatsApp Call" aria-pressed="true" class="slot-btn slot-btn--format is-active">
+                    <span>WhatsApp Call</span>
+                  </button>
+                  <button type="button" data-booking-format="Google Meet + WhatsApp Confirmation" data-booking-format-short="Google Meet" aria-pressed="false" class="slot-btn slot-btn--format">
+                    <span>Google Meet</span>
+                  </button>
+                  <button type="button" data-booking-format="Direct WhatsApp Strategy Chat" data-booking-format-short="WhatsApp Chat" aria-pressed="false" class="slot-btn slot-btn--format">
+                    <span>WhatsApp Chat</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Live Booking Ticket & Instant WhatsApp Confirmation -->
+            <div class="booking-panel">
+              <div class="booking-ticket">
+                <div class="booking-ticket-head">
+                  <span class="text-red" style="font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;">Booking Summary</span>
+                  <span class="font-mono-num" style="color: var(--grey);">WhatsApp Direct</span>
+                </div>
+                <div class="booking-ticket-grid">
+                  <div>
+                    <span class="ticket-label">Service</span>
+                    <span id="ticket-service" class="ticket-val">Digital Marketing</span>
+                  </div>
+                  <div>
+                    <span class="ticket-label">Format</span>
+                    <span id="ticket-format" class="ticket-val">WhatsApp Call</span>
+                  </div>
+                  <div>
+                    <span class="ticket-label">Date</span>
+                    <span id="ticket-date" class="ticket-val font-mono-num">Tomorrow</span>
+                  </div>
+                  <div>
+                    <span class="ticket-label">Time Slot</span>
+                    <span id="ticket-time" class="ticket-val ticket-val--red font-mono-num">11:30 AM IST</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Confirmation View (hidden until submitted) -->
+              <div id="booking-confirm-state" class="confirmation-state" hidden>
+                <div class="confirmation-box" style="margin-bottom: 16px;">
+                  <div class="confirmation-head">
+                    <span class="confirm-icon-badge" aria-hidden="true">
+                      <svg class="confirm-check-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle class="confirm-check-circle" cx="12" cy="12" r="9.5"></circle>
+                        <polyline class="confirm-check-tick" points="8.2 12.4 10.9 15.1 16.2 9.4"></polyline>
+                      </svg>
+                    </span>
+                    <div class="confirmation-text">
+                      <p id="booking-ref-title" style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700;">Slot Ready</p>
+                      <p style="font-size: 0.875rem; color: var(--grey); margin-top: 4px;">
+                        Send the pre-filled message in WhatsApp to lock in your
+                        <strong id="booking-ref-slot" style="color: var(--white);"></strong>
+                        session with ZEBICOM.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-stack">
+                  <a id="booking-wa-launch" href="https://wa.me/918519002579" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--center">
+                    <span>Confirm Slot on WhatsApp</span>
+                  </a>
+                  <div class="form-row-2">
+                    <button id="booking-copy-btn" type="button" class="btn btn--ghost btn--center">Copy Pass</button>
+                    <button id="booking-reset-btn" type="button" class="btn btn--ghost btn--center">Change Slot</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Booking Form -->
+              <form id="booking-form" class="form-stack" novalidate>
+                <div>
+                  <label for="booking-name" class="field-label">Your Name <span class="text-red">*</span></label>
+                  <input id="booking-name" type="text" placeholder="Full name" class="field-input" />
+                  <p id="booking-name-error" class="field-error">Please enter your name.</p>
+                </div>
+
+                <div class="form-row-2">
+                  <div>
+                    <label for="booking-business" class="field-label">Business Name</label>
+                    <input id="booking-business" type="text" placeholder="Company name" class="field-input" />
+                  </div>
+                  <div>
+                    <label for="booking-phone" class="field-label">WhatsApp Number <span class="text-red">*</span></label>
+                    <input id="booking-phone" type="tel" placeholder="+91 98765 43210" class="field-input" />
+                    <p id="booking-phone-error" class="field-error">Please enter a valid WhatsApp number.</p>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="booking-goal" class="field-label">Quick Agenda (Optional)</label>
+                  <input id="booking-goal" type="text" placeholder="e.g., Launch AI calling agent + CRM automation" class="field-input" />
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--center">
+                  <span>Book Slot via WhatsApp</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 10: Contact Us -->
+      <section id="contact" class="section section--bg-dark">
+        <div class="container contact-grid">
+          <div class="contact-info-col reveal">
+            <div>
+              <p class="section-kicker">Contact Us</p>
+              <h2 class="section-title">Let&apos;s Build Something Powerful.</h2>
+              <p class="section-lead" style="margin-top: 14px;">
+                Reach out to discuss digital marketing campaigns, custom websites, IT
+                software systems, or intelligent AI automation tailored to your business.
+              </p>
+            </div>
+
+            <div class="contact-cards">
+              <a href="tel:+918519002579" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-card-label">Phone / WhatsApp</p>
+                  <p class="contact-card-value font-mono-num">8519002579</p>
+                </div>
+              </a>
+
+              <a href="mailto:zebicomcomapny@gmail.com" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-card-label">Email</p>
+                  <p class="contact-card-value">zebicomcomapny@gmail.com</p>
+                </div>
+              </a>
+
+              <div class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-card-label">Office Address</p>
+                  <p style="font-size: 0.9375rem; color: var(--grey-light); line-height: 1.55;">
+                    College of Agriculture, Racecourse Rd, RVS Agriculture University Campus,
+                    Thatipur, Gwalior, Madhya Pradesh 474002, India.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a
+                href="https://wa.me/918519002579"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary"
+              >
+                <span>Chat Directly on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-panel reveal">
+            <div class="contact-form-head">
+              <h3 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;">Project Inquiry</h3>
+              <p style="font-size: 0.875rem; color: var(--grey); margin-top: 4px;">
+                Complete the details below to send your structured inquiry directly to ZEBICOM via WhatsApp.
+              </p>
+            </div>
+
+            <div id="contact-status-box" class="confirmation-box confirmation-state" style="margin-bottom: 22px;" role="status" hidden>
+              <div class="confirmation-head">
+                <span class="confirm-icon-badge" aria-hidden="true">
+                  <svg class="confirm-check-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle class="confirm-check-circle" cx="12" cy="12" r="9.5"></circle>
+                    <polyline class="confirm-check-tick" points="8.2 12.4 10.9 15.1 16.2 9.4"></polyline>
+                  </svg>
+                </span>
+                <div class="confirmation-text">
+                  <p style="font-family: var(--font-display); font-weight: 600;">Your WhatsApp inquiry is prepared.</p>
+                  <p style="font-size: 0.875rem; color: var(--grey); margin-top: 2px;">
+                    If WhatsApp did not open automatically, use the direct launch button below or send via your email client.
+                  </p>
+                </div>
+              </div>
+              <div class="confirmation-actions">
+                <a id="contact-wa-link" href="https://wa.me/918519002579" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  Open WhatsApp Inquiry
+                </a>
+                <button id="contact-copy-btn" type="button" class="btn btn--ghost">Copy Summary</button>
+                <a id="contact-mail-link" href="mailto:zebicomcomapny@gmail.com" class="btn btn--ghost">Open in Email App</a>
+              </div>
+            </div>
+
+            <form id="contact-form" class="form-stack" novalidate>
+              <div class="form-row-2">
+                <div>
+                  <label for="contact-fullName" class="field-label">Full Name <span class="text-red">*</span></label>
+                  <input id="contact-fullName" type="text" placeholder="Your full name" class="field-input" />
+                  <p id="contact-fullName-error" class="field-error">Please enter your full name.</p>
+                </div>
+                <div>
+                  <label for="contact-businessName" class="field-label">Business Name</label>
+                  <input id="contact-businessName" type="text" placeholder="Company or organization" class="field-input" />
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div>
+                  <label for="contact-email" class="field-label">Email Address <span class="text-red">*</span></label>
+                  <input id="contact-email" type="email" placeholder="name@company.com" class="field-input" />
+                  <p id="contact-email-error" class="field-error">Please enter a valid email address.</p>
+                </div>
+                <div>
+                  <label for="contact-phone" class="field-label">Phone Number <span class="text-red">*</span></label>
+                  <input id="contact-phone" type="tel" placeholder="+91 98765 43210" class="field-input" />
+                  <p id="contact-phone-error" class="field-error">Please enter a valid phone or WhatsApp number.</p>
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-service" class="field-label">Select Service <span class="text-red">*</span></label>
+                <select id="contact-service" class="field-select">
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="IT Solutions">IT Solutions</option>
+                  <option value="AI Agents">AI Agents</option>
+                  <option value="AI Automation">AI Automation</option>
+                  <option value="Custom AI Solutions">Custom AI Solutions</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="contact-details" class="field-label">Project Details <span class="text-red">*</span></label>
+                <textarea id="contact-details" placeholder="Tell us about your business goals, timeline, or systems you want to build or automate..." class="field-textarea"></textarea>
+                <p id="contact-details-error" class="field-error">Please share brief project details (at least 10 characters).</p>
+              </div>
+
+              <div class="contact-submit-row">
+                <button type="submit" class="btn btn--primary">Send Inquiry</button>
+                <p style="font-size: 0.75rem; color: var(--grey);">Submits directly via WhatsApp (+91 8519002579)</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions -->
+      <section id="faq" class="section section--bg-black">
+        <div class="container faq-layout">
+          <div class="faq-intro reveal">
+            <p class="section-kicker">Frequently Asked Questions</p>
+            <h2 class="section-title">Clarity On AI &amp; IT Automation.</h2>
+            <p class="section-lead" style="margin-top: 14px;">
+              Answers to common questions from businesses evaluating AI agents, workflow
+              automation, and custom software integration with ZEBICOM.
+            </p>
+
+            <div class="faq-cta-box">
+              <p class="faq-cta-title">Need a tailored architecture review?</p>
+              <p class="faq-cta-desc">
+                Speak directly with our technical team to map out your workflows, tools, and
+                deployment timeline.
+              </p>
+              <button
+                type="button"
+                data-scroll-target="book-call"
+                class="btn btn--primary"
+                style="margin-top: 6px;"
+              >
+                <span>Book a Strategy Call</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="faq-list reveal" role="region" aria-label="Frequently Asked Questions">
+            <article class="faq-item is-open">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="true"
+                aria-controls="faq-panel-1"
+                id="faq-btn-1"
+              >
+                <span class="faq-q-wrap">
+                  <span class="faq-num font-mono-num">01</span>
+                  <span class="faq-question">
+                    How do ZEBICOM&apos;s AI Receptionist and AI Calling Agents connect to our business phone and WhatsApp?
+                  </span>
+                </span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" class="faq-panel">
+                <div class="faq-panel-inner">
+                  <p class="faq-answer">
+                    We integrate voice and conversational AI agents directly with your
+                    business phone lines, WhatsApp Business workflows, and scheduling
+                    calendars. Incoming calls and messages are answered 24/7, inquiries are
+                    qualified against your service rules, and confirmed bookings sync
+                    straight into your CRM or team calendar.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-panel-2"
+                id="faq-btn-2"
+              >
+                <span class="faq-q-wrap">
+                  <span class="faq-num font-mono-num">02</span>
+                  <span class="faq-question">
+                    What repetitive workflows can you automate using n8n and custom APIs?
+                  </span>
+                </span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" class="faq-panel" hidden>
+                <div class="faq-panel-inner">
+                  <p class="faq-answer">
+                    We automate lead capture from Meta Ads, Google Ads, and website forms,
+                    instant WhatsApp and email follow-ups, CRM record updates, appointment
+                    reminders, invoicing triggers, and internal team notifications—connecting
+                    your marketing channels and back-office apps into one seamless pipeline.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-panel-3"
+                id="faq-btn-3"
+              >
+                <span class="faq-q-wrap">
+                  <span class="faq-num font-mono-num">03</span>
+                  <span class="faq-question">
+                    Can you integrate AI and automation into our existing website, CRM, or management software?
+                  </span>
+                </span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" class="faq-panel" hidden>
+                <div class="faq-panel-inner">
+                  <p class="faq-answer">
+                    Yes. You do not need to replace tools that already work for your team.
+                    Our IT &amp; Software Solutions team builds custom API integrations,
+                    web applications, and middleware connectors so AI agents and workflow
+                    automations operate directly alongside your existing WordPress, custom
+                    web platform, or CRM stack.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-panel-4"
+                id="faq-btn-4"
+              >
+                <span class="faq-q-wrap">
+                  <span class="faq-num font-mono-num">04</span>
+                  <span class="faq-question">
+                    How do you ensure AI Customer Support agents give accurate, brand-safe responses?
+                  </span>
+                </span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" class="faq-panel" hidden>
+                <div class="faq-panel-inner">
+                  <p class="faq-answer">
+                    Every AI assistant is configured strictly around your verified service
+                    documentation, FAQs, and business policies. We establish clear guardrails
+                    and human-handoff triggers so nuanced requests or priority escalations
+                    are routed immediately to your staff with full conversation context.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-panel-5"
+                id="faq-btn-5"
+              >
+                <span class="faq-q-wrap">
+                  <span class="faq-num font-mono-num">05</span>
+                  <span class="faq-question">
+                    What is the process for getting started with an AI or IT automation project?
+                  </span>
+                </span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" class="faq-panel" hidden>
+                <div class="faq-panel-inner">
+                  <p class="faq-answer">
+                    We follow our five-stage framework: Understand your current operations,
+                    Strategize the technical and automation architecture, Develop and test
+                    the integrations, Launch into production, and Grow with ongoing
+                    optimization as your operational volume scales.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-panel-6"
+                id="faq-btn-6"
+              >
+                <span class="faq-q-wrap">
+                  <span class="faq-num font-mono-num">06</span>
+                  <span class="faq-question">
+                    Do you work with both Indian and international businesses?
+                  </span>
+                </span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div id="faq-panel-6" role="region" aria-labelledby="faq-btn-6" class="faq-panel" hidden>
+                <div class="faq-panel-inner">
+                  <p class="faq-answer">
+                    Yes. From our office in Gwalior, India, ZEBICOM designs digital
+                    marketing systems, custom software, and multilingual or regional AI
+                    automation solutions for businesses operating both across India and
+                    internationally.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Section 11: Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="#home" data-scroll-target="home" class="footer-brand-row" aria-label="ZEBICOM Back to Top">
+              <img
+                src="assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg"
+                onerror="this.onerror=null;this.src='public/assets/aistudio/WhatsApp_Image_2026-11-17_at_11.30.21_AM_f315baf8.jpeg'"
+                alt="ZEBICOM Official Logo"
+                class="footer-emblem"
+              />
+              <span class="brand-wordmark" style="font-size: 1.5rem;">Zebi<span class="text-red">com</span></span>
+            </a>
+            <p class="footer-desc">
+              We help businesses grow through digital marketing, modern technology,
+              intelligent AI agents, and business automation.
+            </p>
+            <p class="section-kicker" style="margin-bottom: 0;">Technology • Innovation • Growth</p>
+            <div class="footer-socials">
+              <a href="https://share.google/QGEsDHMP4xMEwchBr" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-links">
+              <li><a href="#home" data-scroll-target="home">Home</a></li>
+              <li><a href="#about" data-scroll-target="about">About Us</a></li>
+              <li><a href="#services" data-scroll-target="services">Services</a></li>
+              <li><a href="#ai-solutions" data-scroll-target="ai-solutions">AI Solutions</a></li>
+              <li><a href="#our-work" data-scroll-target="our-work">Our Work</a></li>
+              <li><a href="#contact" data-scroll-target="contact">Contact</a></li>
+              <li><a href="#book-call" data-scroll-target="book-call" class="text-red" style="font-weight: 600;">Book Strategy Call</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Our Services</h3>
+            <ul class="footer-links">
+              <li><button type="button" data-book-service="Digital Marketing">Digital Marketing</button></li>
+              <li><button type="button" data-book-service="Web Development">Web Development</button></li>
+              <li><button type="button" data-book-service="IT Solutions">IT &amp; Software Solutions</button></li>
+              <li><button type="button" data-book-service="AI Agents">AI Agents</button></li>
+              <li><button type="button" data-book-service="AI Automation">AI Automation</button></li>
+              <li><button type="button" data-book-service="Custom AI Solutions">Custom AI Solutions</button></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Contact</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.875rem; color: var(--grey);">
+              <p>
+                <span style="display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.6);">Phone / WhatsApp</span>
+                <a href="tel:+918519002579" class="font-mono-num" style="color: var(--white);">8519002579</a>
+              </p>
+              <p>
+                <span style="display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.6);">Email</span>
+                <a href="mailto:zebicomcomapny@gmail.com" style="color: var(--white); word-break: break-all;">zebicomcomapny@gmail.com</a>
+              </p>
+              <p>
+                <span style="display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.6);">Office</span>
+                <span>College of Agriculture, Racecourse Rd, RVS Agriculture University Campus, Thatipur, Gwalior, Madhya Pradesh 474002, India.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 ZEBICOM. All Rights Reserved.</p>
+          <p style="font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.8);">
+            Technology • Innovation • Growth
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Quick WhatsApp Booking Button -->
+    <button type="button" data-scroll-target="book-call" class="btn btn--primary floating-book-btn">
+      <span>Book WhatsApp Call</span>
+    </button>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m18 15-6-6-6 6"></path>
+      </svg>
+    </button>
+
+    <!-- Service Specification Modal -->
+    <div id="service-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-service-title" hidden>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div>
+            <p id="modal-service-number" class="section-kicker" style="margin-bottom: 4px;">Service 01</p>
+            <h3 id="modal-service-title" style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 700;">Digital Marketing</h3>
+          </div>
+          <button type="button" data-close-modal class="modal-close" aria-label="Close service details">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <p id="modal-service-desc" style="color: var(--grey); font-size: 1rem;"></p>
+        <p id="modal-service-outcome" class="modal-outcome"></p>
+
+        <p style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--grey); margin-bottom: 12px;">
+          Included Capabilities
+        </p>
+        <ul id="modal-service-caps" class="modal-cap-list"></ul>
+
+        <div class="modal-footer">
+          <button type="button" data-close-modal class="btn btn--ghost">Close</button>
+          <button id="modal-inquire-btn" type="button" class="btn btn--primary">Inquire About Digital Marketing</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
